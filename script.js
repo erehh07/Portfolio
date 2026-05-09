@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // types out the tagline character by character, 60ms between each
   var typedEl = document.getElementById('typed-text');
   if (typedEl) {
-    var text = 'MCA Student · Web Developer · AI Enthusiast';
+    var text = 'MCA Student · Full Stack Web Developer · AI Enthusiast';
     var i = 0;
     var timer = setInterval(function() {
       typedEl.textContent += text[i];
