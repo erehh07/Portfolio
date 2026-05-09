@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — S. Lokesh Reddy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Unique thumbnail colours per project */
+    .thumb-weather  { background: linear-gradient(135deg, #1a1aff 0%, #6666ff 100%); }
+    .thumb-ai       { background: linear-gradient(135deg, #111 0%, #1a1aff 100%); }
+    .thumb-todo     { background: linear-gradient(135deg, #111 0%, #1a1aff 100%); }
+
+    /* Tech stack tag row inside project card */
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 0.8rem;
+    }
+    .tech-tag {
+      font-family: var(--font-pixel);
+      font-size: 0.85rem;
+      border: 2px solid var(--blue);
+      padding: 1px 7px;
+      color: var(--blue);
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+<a href="index.html" class="nav-logo">&lt;LR/&gt;</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="skills.html">SKILLS</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="page-content">
+
+    <span class="section-tag">THINGS I BUILT</span>
+    <h1 class="section-title">PROJECTS</h1>
+
+    <!-- 2-column responsive grid of project cards -->
+    <div class="projects-grid">
+
+      <!-- ---- PROJECT 1: Weather Forecast Dashboard ---- -->
+      <div class="project-card reveal">
+        <!-- Coloured thumbnail placeholder -->
+        <div class="project-thumb thumb-weather">
+          <div class="thumb-label">WEATHER</div>
+        </div>
+
+        <div class="project-body">
+          <!-- Badge: project type -->
+          <span class="project-tag-badge">WEB APP</span>
+
+          <h3 class="project-title">Weather Forecast Dashboard</h3>
+
+          <!-- Tech stack tags -->
+          <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Visual Crossing API</span>
+            <span class="tech-tag">LocalStorage</span>
+          </div>
+
+          <p class="project-desc">
+            A weather dashboard that fetches live forecast data from the Visual Crossing
+            API and displays temperature, humidity, wind speed, and a 7-day outlook.
+            User authentication is handled client-side using LocalStorage and no backend
+            required.
+          </p>
+
+          <div class="project-btns">
+            <a href="#" class="btn btn-primary">VIEW PROJECT</a>
+            <a href="#" class="btn btn-outline">GITHUB ↗</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ---- PROJECT 2: InfoPal AI Chatbot ---- -->
+      <div class="project-card reveal">
+        <div class="project-thumb thumb-ai">
+          <div class="thumb-label">AI</div>
+        </div>
+
+        <div class="project-body">
+          <span class="project-tag-badge">AI / REACT</span>
+
+          <h3 class="project-title">InfoPal AI Chatbot</h3>
+
+          <div class="tech-tags">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">RAG Pipeline</span>
+            <span class="tech-tag">PDF / DOCX</span>
+            <span class="tech-tag">OCR Fallback</span>
+            <span class="tech-tag">LLM API</span>
+          </div>
+
+          <p class="project-desc">
+            A React-based AI chatbot that uses a Retrieval-Augmented Generation (RAG)
+            pipeline to answer questions from uploaded documents. Supports PDF and DOCX
+            ingestion with automatic OCR fallback for scanned files. Users can upload
+            their docs and query them in natural language — no copying and pasting required.
+          </p>
+
+          <div class="project-btns">
+            <a href="#" class="btn btn-primary">VIEW PROJECT</a>
+            <a href="#" class="btn btn-outline">GITHUB ↗</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ---- PROJECT 3: Cinema Formats ---- -->
+<div class="project-card reveal">
+  <div class="project-thumb" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+    <div class="thumb-label">CINEMA</div>
+  </div>
+
+  <div class="project-body">
+    <span class="project-tag-badge">WEB / EDUCATION</span>
+
+    <h3 class="project-title">Cinema Formats</h3>
+
+    <div class="tech-tags">
+      <span class="tech-tag">HTML</span>
+      <span class="tech-tag">CSS</span>
+      <span class="tech-tag">JavaScript</span>
+    </div>
+
+    <p class="project-desc">
+      A multi-page educational website about cinema aspect ratios — IMAX (1.43:1),
+      Flat (1.85:1), and Scope (2.39:1). Covers famous films shot in each format,
+      film stock history, cameras used in cinema.
+    </p>
+
+    <div class="project-btns">
+      <a href="#" class="btn btn-primary">VIEW PROJECT</a>
+      <a href="#" class="btn btn-outline">GITHUB ↗</a>
+    </div>
+  </div>
+</div>
+
+      <!-- ---- MORE COMING SOON card ---- -->
+      <div class="project-card reveal" style="justify-content: center; align-items: center;">
+        <div class="project-thumb" style="background: var(--cream); border-bottom: 2px solid var(--blue);">
+          <div class="thumb-label" style="color: rgba(26,26,255,0.2); font-size: 2rem;">???</div>
+        </div>
+        <div class="project-body" style="display:flex; align-items:center; justify-content:center; min-height:180px;">
+          <div style="text-align: center;">
+            <div style="font-family: var(--font-pixel); font-size: 1.8rem; color: var(--blue); letter-spacing:2px;">MORE COMING SOON</div>
+            <div style="font-size:12px; color: var(--gray); margin-top:8px;">Currently building new things...</div>
+            <a href="contact.html" class="btn btn-outline" style="margin-top:1rem;">SAY HI</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+
+  </main>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+   
+    <p>© 2025 S. LOKESH REDDY</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

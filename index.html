@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S. Lokesh Reddy — Portfolio</title>
+
+  <!-- Google Fonts: VT323 (pixel) + Space Mono (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+<a href="index.html" class="nav-logo">&lt;LR/&gt;</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="skills.html">SKILLS</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="page-content">
+
+    <!-- ---- HERO SECTION ---- -->
+    <section class="hero">
+
+     
+      <div class="hero-text">
+
+        <!-- Pixel window card wrapping the name -->
+        <div class="pixel-window" style="margin-bottom: 1.5rem;">
+          <div class="pixel-window-bar">
+        
+            <span class="pixel-window-title">~/portfolio/home</span>
+          </div>
+          <div class="pixel-window-body">
+            <span class="section-tag">HELLO, WORLD</span>
+            <h1>S. Lokesh<br>Reddy</h1>
+            <!-- Tagline typed out by JS; cursor blinks via CSS -->
+            <p class="tagline">
+              <span id="typed-text"></span><span class="cursor"></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="projects.html" class="btn btn-primary">VIEW PROJECTS</a>
+          <a href="contact.html" class="btn btn-outline">CONTACT ME</a>
+        </div>
+      </div>
+
+        <div>
+        <div class="pixel-window reveal">
+          <div class="pixel-window-bar">
+        
+            <span class="pixel-window-title">README.md</span>
+          </div>
+          <div class="pixel-window-body">
+            <p style="font-size:13px; line-height:1.9;">
+              Hey! I'm a first-year <strong>MCA student at CBIT, Hyderabad</strong>
+              building things with HTML, CSS, JS and a sprinkle of AI.<br><br>
+              I love turning ideas into interactive experiences — from weather dashboards
+              to RAG-powered chatbots. Currently deepening my React &amp; backend skills.<br><br>
+             
+            </p>
+            <div style="margin-top:1rem; display:flex; gap:8px; flex-wrap:wrap;">
+              <span class="tag">Open to Internships</span>
+             
+              <span class="tag">Hyderabad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- ---- STAT BOXES ---- -->
+    <div class="stats-grid">
+      <div class="stat-box reveal">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">SKILLS</div>
+      </div>
+      <div class="stat-box reveal">
+        <div class="stat-num">3</div>
+        <div class="stat-label">PROJECTS</div>
+      </div>
+      <div class="stat-box reveal">
+        <div class="stat-num">4</div>
+        <div class="stat-label">CERTS</div>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 1rem;">
+      <span class="section-tag">FEATURED</span>
+      <h2 class="section-title">LATEST BUILD</h2>
+    </div>
+   <div class="pixel-window reveal" style="max-width: 680px;">
+      <div class="pixel-window-bar">
+        <span class="pixel-window-title">InfoPal AI Chatbot</span>
+      </div>
+      <div class="pixel-window-body">
+        <span class="project-tag-badge">AI / REACT</span>
+        <p style="font-size:13px; line-height:1.8; margin-top: 8px;">
+          A React-based AI chatbot powered by a RAG (Retrieval-Augmented Generation)
+          pipeline. Upload PDFs or DOCX files and ask questions — it reads your docs
+          and answers intelligently, with OCR fallback for scanned files.
+        </p>
+        
+      </div>
+    </div>
+
+  </main>
+<footer>
+  <p>© 2025 S. LOKESH REDDY</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

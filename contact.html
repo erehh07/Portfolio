@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — S. Lokesh Reddy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+<a href="index.html" class="nav-logo">&lt;LR/&gt;</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="skills.html">SKILLS</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="page-content">
+
+    <span class="section-tag">LET'S CONNECT</span>
+    <h1 class="section-title">CONTACT</h1>
+
+    <div class="contact-grid">
+
+      <!-- ---- LEFT: Contact Form ---- -->
+      <div class="reveal">
+        <div class="pixel-window">
+          <div class="pixel-window-bar">
+          
+            <span class="pixel-window-title">send_message.sh</span>
+          </div>
+          <div class="pixel-window-body">
+            <form id="contact-form" novalidate>
+
+              <div class="form-group">
+                <label for="name">NAME</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="your name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">EMAIL</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">MESSAGE</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="what's on your mind?"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Submit button (no href, no action — JS handles it) -->
+              <button type="submit" class="btn btn-primary">
+                SEND MESSAGE
+              </button>
+
+              <!-- JS writes status text here (terminal-style output) -->
+              <div class="form-status" id="form-status"></div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ---- RIGHT: Social Links + Contact Info ---- -->
+      <div>
+
+        <!-- Social links as clickable rows -->
+        <div class="reveal" style="margin-bottom: 1.5rem;">
+          <span class="section-tag">FIND ME ON</span>
+
+          <div class="social-links" style="margin-top: 1rem;">
+
+            <a href="mailto:lokkeshh.reddyyy@gmail.com" class="social-link-row">
+              <span class="social-icon">✉</span>
+              <div class="social-info">
+                <div class="social-name">EMAIL</div>
+                <div class="social-handle">lokkeshh.reddyyy@gmail.com</div>
+              </div>
+              <span style="font-family: var(--font-pixel); font-size: 1.2rem;">↗</span>
+            </a>
+            <a href="#" class="social-link-row">
+              <span class="social-icon">GH</span>
+              <div class="social-info">
+                <div class="social-name">GITHUB</div>
+                <div class="social-handle">github.com/lokeshreddy</div>
+              </div>
+              <span style="font-family: var(--font-pixel); font-size: 1.2rem;">↗</span>
+            </a>
+
+          </div>
+        </div>
+
+    
+
+        <!-- Little terminal-style note -->
+        <div class="card reveal" style="margin-top: 1.5rem; font-family: var(--font-pixel); font-size: 1.1rem; letter-spacing: 1px; line-height: 1.8; color: var(--blue);">
+          <span style="color: var(--gray);">$</span> echo "feel free to reach out<br>
+          &nbsp;&nbsp;for internships, collabs,<br>
+          &nbsp;&nbsp;or just to say hi :)"<br>
+          <span style="color: var(--gray);">$</span> <span class="cursor" style="height:1rem;"></span>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+   
+    <p>© 2025 S. LOKESH REDDY</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
